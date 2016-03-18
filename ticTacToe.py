@@ -19,6 +19,14 @@ printBoard(theBoard)
 
 def checkWinner(board, player):    
     print('Checking if ' + player + ' is a winner...')
+if player == 'top-L' and player == 'top-M' and player == 'top-R':
+       while true:
+              print("player has won")
+
+
+
+
+
 
     
     
