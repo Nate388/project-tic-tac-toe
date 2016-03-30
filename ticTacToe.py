@@ -15,20 +15,28 @@ def printBoard(board):
     # Hint: you can follow the same process that was done in the textbook.  #
     #########################################################################
 
-def checkWinner(board, player):    
-    print('Checking if ' + player + ' is a winner...')
-if player == 'top-L' and player == 'top-M' and player == 'top-R':
-       print('player has won')
-elif player == 'top-R' and player == 'mid-R' and player == 'low-R':
-       print('player has one')
-elif player == 'low-L' and player == 'low-M' and player == 'low-R':
-       print('player has won')
-elif player == 'top-L' and player == 'mid-L' and player == 'low-L':
-       print('player has won')
-elif player == 'top-L' and player == 'mid-M' and player == 'low-R':
-       print('player has won')
-elif player == 'top-R' and player == 'mid-M' and player == 'low-L':
-       print('player has won')
+def checkWinner(board, player):
+       print('Checking if ' + player + ' is a winner...')
+       if player == 'top-L' and player == 'top-M' and player == 'top-R':
+              return True
+       elif player == 'top-R' and player == 'mid-R' and player == 'low-R':
+              return True
+       elif player == 'low-L' and player == 'low-M' and player == 'low-R':
+              return True
+       elif player == 'top-L' and player == 'mid-L' and player == 'low-L':
+              return True
+       elif player == 'top-L' and player == 'mid-M' and player == 'low-R':
+              return True
+       elif player == 'top-R' and player == 'mid-M' and player == 'low-L':
+              return True
+       elif player:
+              return False
+       
+       
+
+
+
+                           
 
 
 
