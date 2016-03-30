@@ -20,15 +20,15 @@ def checkWinner(board, player):
 if player == 'top-L' and player == 'top-M' and player == 'top-R':
        print('player has won')
 elif player == 'top-R' and player == 'mid-R' and player == 'low-R':
-       print('player has one)
+       print('player has one')
 elif player == 'low-L' and player == 'low-M' and player == 'low-R':
-       print('player has won)
+       print('player has won')
 elif player == 'top-L' and player == 'mid-L' and player == 'low-L':
        print('player has won')
 elif player == 'top-L' and player == 'mid-M' and player == 'low-R':
        print('player has won')
 elif player == 'top-R' and player == 'mid-M' and player == 'low-L':
-       print('player has won)
+       print('player has won')
 
 
 
