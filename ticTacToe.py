@@ -2,11 +2,11 @@ theBoard = {'top-L': ' ', 'top-M': ' ', 'top-R': ' ', 'mid-L': ' ', 'mid-M': ' '
 ' ', 'mid-R': ' ', 'low-L': ' ', 'low-M': ' ', 'low-R': ' '}
 
 def printBoard(board):
-       print(board['top-L'] + '|' + board['top-M'] + '|' + board['top-R'])
-       print('-+-+-')
-       print(board['mid-L'] + '|' + board['mid-M'] + '|' + board['mid-R'])
-       print('-+-+-')
-       print(board['low-L'] + '|' + board['low-M'] + '|' + board['low-R'])
+    print(board['top-L'] + '|' + board['top-M'] + '|' + board['top-R'])
+    print('-+-+-')
+    print(board['mid-L'] + '|' + board['mid-M'] + '|' + board['mid-R'])
+    print('-+-+-')
+    print(board['low-L'] + '|' + board['low-M'] + '|' + board['low-R'])
     # TO DO #################################################################
     # Write code in this function that prints the game board.               #
     # The code in this function should only print, the user should NOT      #
@@ -18,23 +18,23 @@ def printBoard(board):
 def checkWinner(board, player):
     print('Checking if ' + player + ' is a winner...')
     if player == 'top-L' and player == 'top-M' and player == 'top-R':#horizontal
-            return True
+        return True
     elif player == 'mid-L' and player == 'mid-M' and player == 'mid-R':
-            return True
+        return True
     elif player == 'low-L' and player == 'low-M' and player == 'low-R':
-            return True
-    elif player == 'top-R' and player == 'mid-R' and player == 'low-R': #vertical
-            return True
+        return True
+    elif player == 'top-R' and player == 'mid-R' and player == 'low-R':#vertical
+        return True
     elif player == 'top-M' and player == 'mid-M' and player == 'low-M':
-            return True
+        return True
     elif player == 'top-L' and player == 'mid-L' and player == 'low-L':
-            return True
-    elif player == 'top-L' and player == 'mid-M' and player == 'low-R': #diagonal
-            return True
+        return True
+    elif player == 'top-L' and player == 'mid-M' and player == 'low-R':#diagonal
+        return True
     elif player == 'top-R' and player == 'mid-M' and player == 'low-L':
-         return True
+        return True
     else:
-         return False
+        return False
 
 
 
