@@ -32,10 +32,7 @@ def checkWinner(board, player):
        elif player == 'top-L' and player == 'mid-M' and player == 'low-R': #diagonal
               return True
        elif player == 'top-R' and player == 'mid-M' and player == 'low-L':
-              return True
-       elif player:
-              return False
-       
+               return True
        
 
 
