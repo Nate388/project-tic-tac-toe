@@ -16,30 +16,25 @@ def printBoard(board):
     #########################################################################
 
 def checkWinner(board, player):
-       print('Checking if ' + player + ' is a winner...')
-       if player == 'top-L' and player == 'top-M' and player == 'top-R':#horizontal
-                  return True
-       elif player == 'mid-L' and player == 'mid-M' and player == 'mid-R':
-                  return True
-       elif player == 'low-L' and player == 'low-M' and player == 'low-R':
-                  return True
-       elif player == 'top-R' and player == 'mid-R' and player == 'low-R': #vertical 
-                  return True
-       elif player == 'top-M' and player == 'mid-M' and player == 'low-M':
-                  return True
-       elif player == 'top-L' and player == 'mid-L' and player == 'low-L':
-                  return True
-       elif player == 'top-L' and player == 'mid-M' and player == 'low-R': #diagonal
-                  return True
-       elif player == 'top-R' and player == 'mid-M' and player == 'low-L':
-                  return True
-       else:
-              return False
-       
-
-
-
-                           
+    print('Checking if ' + player + ' is a winner...')
+    if player == 'top-L' and player == 'top-M' and player == 'top-R':#horizontal
+            return True
+    elif player == 'mid-L' and player == 'mid-M' and player == 'mid-R':
+            return True
+    elif player == 'low-L' and player == 'low-M' and player == 'low-R':
+            return True
+    elif player == 'top-R' and player == 'mid-R' and player == 'low-R': #vertical
+            return True
+    elif player == 'top-M' and player == 'mid-M' and player == 'low-M':
+            return True
+    elif player == 'top-L' and player == 'mid-L' and player == 'low-L':
+            return True
+    elif player == 'top-L' and player == 'mid-M' and player == 'low-R': #diagonal
+            return True
+    elif player == 'top-R' and player == 'mid-M' and player == 'low-L':
+         return True
+    else:
+         return False
 
 
 
@@ -47,8 +42,13 @@ def checkWinner(board, player):
 
 
 
-    
-    
+
+
+
+
+
+
+
     # TO DO #################################################################
     # Write code in this function that checks the tic-tac-toe board          #
     # to determine if the player stored in variable 'player' currently      #
@@ -57,8 +57,8 @@ def checkWinner(board, player):
     # variable 'player' has won. The function should return False           #
     # if the player in the variable 'player' has not won.                   #
     #########################################################################
-    
-    
+
+
 def startGame(startingPlayer, board):
     # TO DO #################################################################
     # Add comments to each line in this function to describe what           #
@@ -74,14 +74,13 @@ def startGame(startingPlayer, board):
         if( checkWinner(board, 'X') ): # checking the chechWinner function to see if X has filled the required spots on the baord to obtain a victory condition
             print('X wins!') #if so, player X has won
             break # break the loop and end
-        elif ( checkWinner(board, 'O') ):# checking the chechWinner function to see if O has filled the required spots on the baord to obtain a victory condition 
+        elif ( checkWinner(board, 'O') ):# checking the chechWinner function to see if O has filled the required spots on the baord to obtain a victory condition
             print('O wins!') # if so, O has won
             break # break the loop and end
-    
+
         if turn == 'X': # if the turn was an X
             turn = 'O' # the next one is an O
         else: # if not
             turn = 'X' # then it's X's turn
-        
+
     printBoard(board) # print the baord to see the results
-    
