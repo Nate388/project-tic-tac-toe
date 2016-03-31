@@ -17,15 +17,19 @@ def printBoard(board):
 
 def checkWinner(board, player):
        print('Checking if ' + player + ' is a winner...')
-       if player == 'top-L' and player == 'top-M' and player == 'top-R':
+       if player == 'top-L' and player == 'top-M' and player == 'top-R': #horizontal
               return True
-       elif player == 'top-R' and player == 'mid-R' and player == 'low-R':
+       elif player == 'mid-L' and player == 'mid-M' and player == 'mid-R':
               return True
        elif player == 'low-L' and player == 'low-M' and player == 'low-R':
               return True
+       elif player == 'top-R' and player == 'mid-R' and player == 'low-R': #vertical 
+              return True
+       elif player == 'top-M' and player == 'mid-M' and player == 'low-M':
+              return True
        elif player == 'top-L' and player == 'mid-L' and player == 'low-L':
               return True
-       elif player == 'top-L' and player == 'mid-M' and player == 'low-R':
+       elif player == 'top-L' and player == 'mid-M' and player == 'low-R': #diagonal
               return True
        elif player == 'top-R' and player == 'mid-M' and player == 'low-L':
               return True
